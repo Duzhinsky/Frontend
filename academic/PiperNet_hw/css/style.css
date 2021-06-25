@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+body{
+    padding:0;
+    margin:0;
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1219px;
+    padding: 0px 55px;
+    margin: auto;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 84px;
+    background-color: #007765;
+}
+
+header .logo {
+    margin-top: 15px;
+    float: left;
+    padding: 5px;
+}
+
+header nav {
+    float: right;
+    margin-top: 29px;
+}
+
+header nav ul {
+    margin: 0px;
+}
+
+header nav li {
+    display: inline;
+    margin: 0px;
+    padding: 0px 13px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+header nav li:not(:last-child) {
+    border-right: 2px solid #fff;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav li a:hover {
+    color: #eff7f6;
+}
+
+main {
+    margin-top: 84px;
+}
+
+.hero.welcome-here {
+    background-image: url("../img/welcome-image.png");
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.hero.join {
+    background-image: url("../img/join-image.png");
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.hero {
+    width: 100%;
+    /* background-image: ; */
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.hero-text {
+    margin: 0px;   
+
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    text-align: center;
+}
+
+section {
+    background-color: #eee;
+    padding: 48px 55px 92px 55px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+section .section-title {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #007765;
+    font-size: 64px;
+    text-align: center;
+}
+
+section p {
+    color: #000;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+section p:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+section#coin {
+    background-color: #fff;
+}
+
+section#coin .ppc_logo {
+    width: 115px;
+    height: 115px;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 35px;
+}

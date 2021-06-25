@@ -1,0 +1,50 @@
+.content {
+    width: 70%;
+    margin: auto;
+}
+
+figure {
+    float: right;
+}
+
+figure {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+figure figcaption {
+    font-style:italic;
+}
+
+figure img {
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: sans-serif;
+    margin-top: 1.5em;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 1.5em;
+}
+
+th, td {
+    border: 1px solid grey;
+}
+
+th {
+    padding: 5px 5px 5px 5px;
+}
+
+td {
+    padding: 2px;
+    text-align: center;
+}
