@@ -14,6 +14,7 @@
     max-width: 1220px;
     padding: 0px 55px;
     margin: 0px auto;
+    box-sizing: border-box;
 }
 
 .header {
@@ -64,6 +65,59 @@
 
 .content {
     flex: 1 1 auto;
+    margin-top: 84px;
+}
+
+.hero {
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+
+    &__text {
+        margin: 0px;
+        font-style: normal;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &#welcome {
+        padding: 160px 0px;
+        font-size: 72px;
+        line-height: 84px;
+        background-image: url("../img/welcome-image.png");
+    }
+}
+
+.section {
+    &__title {
+        margin: 0px;
+
+        color: #007765;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+    }
+
+    &__content {
+        margin-top: 16px;
+        &__text {
+            margin: 0px;
+
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 37px;
+            color: #000000;
+        }
+    }
+
+    &#problem {
+        padding: 48px 0px 92px;
+        background-color: #eee;
+    }
 }
 
 .footer {
@@ -74,7 +128,7 @@
     &__text {
         max-width: 540px;
         margin: 0px auto;
-        
+
         color: #fff;
         font-style: normal;
         font-weight: normal;
