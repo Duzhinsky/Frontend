@@ -95,6 +95,13 @@
   background-image: url("../img/welcome-image.png");
 }
 
+.hero#joinus {
+  padding: 128px 0px;
+  font-size: 48px;
+  line-height: 56px;
+  background-image: url("../img/join-image.png");
+}
+
 .section__title {
   margin: 0px;
   color: #007765;
@@ -119,9 +126,69 @@
   color: #000000;
 }
 
+.section__content__img {
+  max-width: 115px;
+  max-height: 115px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 48px;
+}
+
 .section#problem {
   padding: 48px 0px 92px;
   background-color: #eee;
+}
+
+.section#coin {
+  padding: 37px 0px 97px;
+  background-color: #fff;
+}
+
+.section#team {
+  padding: 64px 0px 84px;
+  background-color: #eee;
+}
+
+.section#team .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.section#team .team__member {
+  width: 350px;
+  margin: 15px 0px;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.section#team .team__member__photo {
+  max-width: 168px;
+  max-height: 168px;
+  border-radius: 50%;
+}
+
+.section#team .team__member__name {
+  margin: 12px 0px 0px 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #007765;
+}
+
+.section#team .team__member__position {
+  margin: 0;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
 }
 
 .footer {
