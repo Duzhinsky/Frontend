@@ -4,18 +4,26 @@ a {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   padding: 0px 55px;
   margin: 0px auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0px 30px;
+  }
 }
 
 .header {
   width: 100%;
-  height: 80px;
 }
 
 .header__row {
   padding-top: 33px;
+  padding-bottom: 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,27 +41,84 @@ a {
           align-items: center;
 }
 
-.header__logo {
-  width: 500px;
+@media screen and (max-width: 768px) {
+  .header__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  .logo {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .logo {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .logo {
+    font-size: 7px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .logo {
+    font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .logo {
+    font-size: 5px;
+  }
 }
 
 .logo__image {
-  width: 96px;
-  height: 94px;
+  display: inline-block;
+  width: 9em;
+}
+
+@media screen and (max-width: 440px) {
+  .logo__image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .logo__image {
+    width: 7em;
+  }
+}
+
+.logo__image img {
+  width: 100%;
 }
 
 .logo__text {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-left: 2em;
+  display: inline-block;
   font-family: Montserrat;
   font-style: normal;
   text-align: left;
@@ -62,33 +127,139 @@ a {
   color: #000;
 }
 
+@media screen and (max-width: 440px) {
+  .logo__text {
+    margin-left: 0;
+  }
+}
+
 .logo__text__caption {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 2em;
 }
 
 .logo__text__title {
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 3em;
+  text-transform: uppercase;
 }
 
 .menu {
+  padding: 0px;
   list-style: none;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.2em;
   color: #000;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1300px) {
+  .menu {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .menu {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .menu {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .menu {
+    font-size: 14px;
+  }
 }
 
 .menu__link {
   display: inline-block;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .menu__link {
+    display: block;
+  }
 }
 
 .menu__link:not(:last-child) {
-  margin-right: 116px;
+  margin-right: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .menu__link:not(:last-child) {
+    margin: 1em 0em;
+  }
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    display: none;
+  }
+  .menu.menu_active {
+    display: block;
+  }
+}
+
+.menu__burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .menu__burger::before, .menu__burger::after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .menu__burger::before {
+    bottom: 0;
+  }
+  .menu__burger::after {
+    top: 0;
+  }
+  .menu__burger.menu_active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: 9px;
+  }
+  .menu__burger.menu_active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 9px;
+  }
+  .menu__burger.menu_active span {
+    display: none;
+  }
+  .menu__burger span {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
 }
 /*# sourceMappingURL=style.css.map */
