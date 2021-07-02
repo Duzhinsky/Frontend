@@ -189,7 +189,7 @@ a {
 @media screen and (max-width: 768px) {
   .menu__link {
     display: block;
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .menu__link:not(:last-child) {
     margin-right: 0;
