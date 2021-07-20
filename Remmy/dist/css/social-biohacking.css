@@ -1,0 +1,81 @@
+.social-biohacking {
+  margin-top: 170px;
+}
+
+.social-biohacking__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-biohacking__content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 470px;
+          flex: 0 0 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 33px;
+}
+
+.social-biohacking__snapshot {
+  margin-left: 95px;
+  width: 270px;
+  height: 590px;
+  -ms-flex-preferred-size: 270px;
+      flex-basis: 270px;
+  background: url("../img/mockup-1.png");
+  background-position: center center;
+  -webkit-filter: drop-shadow(0px 16px 32px rgba(7, 19, 48, 0.08));
+          filter: drop-shadow(0px 16px 32px rgba(7, 19, 48, 0.08));
+  border-radius: 44px;
+}
+
+.social-biohacking__microtitle {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3D55F9;
+  margin: 0px 0px 20px 0px;
+}
+
+.social-biohacking__title {
+  margin: 0px 0px 26px 0px;
+}
+
+.social-biohacking__text {
+  margin: 0px 0px 31px 0px;
+}
+
+@media (max-width: 1023px) {
+  .social-biohacking__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .social-biohacking__content {
+    margin: 0;
+  }
+
+  .social-biohacking__snapshot {
+    -ms-flex-preferred-size: 590px;
+        flex-basis: 590px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
