@@ -31,11 +31,13 @@ $md_wrap_img: 1023px;
 		height: 590px;
 		flex-basis: 270px;
 		@media (max-width: $md_wrap_img) { 
-			flex-basis: 590px; 
+			width: 200px;
+			flex-basis: 438px; 
 			align-self: center;
 			margin: 0;
 		}
 		background: url('../img/mockup-1.png');
+		background-size: cover;
 		background-position: center center;
 		filter: drop-shadow(0px 16px 32px rgba(7, 19, 48, 0.08));
 		border-radius: 44px;
