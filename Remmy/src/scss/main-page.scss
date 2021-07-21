@@ -91,7 +91,7 @@ $md_wrap_img: 1023px;
 			image-rendering: crisp-edges;
 
 			@media (max-width: $md_wrap_img) {
-				max-width: 210px;
+				max-width: calc(210px + (520 - 210)*((100vw - 320px) / (1023 - 320)));
 			}
 		}
 	}

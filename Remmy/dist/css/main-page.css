@@ -129,7 +129,7 @@
   }
 
   .main-page__img img {
-    max-width: 210px;
+    max-width: calc(210px + (520 - 210)*((100vw - 320px) / (1023 - 320)));
   }
 }
 

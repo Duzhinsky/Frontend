@@ -8,6 +8,7 @@ $md_wrap_img: 1023px;
 		@media (max-width: $md_wrap_img) {
 			flex-wrap: wrap;
 			flex-direction: column;
+			align-items: center;
 		}
 	}
 
@@ -21,19 +22,19 @@ $md_wrap_img: 1023px;
 
 		@media (max-width: $md_wrap_img) {
 			margin: 0;
+			flex: 1 1 auto;
+			max-width: 470px;
 		}
 	}
 
 	&__img {
 		margin-left: 95px;
-		width: 270px;
-		height: 500px;
+		
 		flex: 0 1 270px;
 		align-self: center;
 		overflow: hidden;
 		@media (max-width: $md_wrap_img) { 
-			width: 200px;
-			flex: 0 1 calc(200px / 270 * 500);
+			flex: 0 1 auto;
 			align-self: center;
 			margin: 0;
 		}
@@ -41,7 +42,7 @@ $md_wrap_img: 1023px;
 			object-fit: cover;
 			max-width: 100%;
 			@media (max-width: $md_wrap_img) {
-				max-width: 210px;
+				max-width: calc(210px + (300 - 210)*((100vw - 320px) / (1023 - 320)));
 			}
 		}
 	}

@@ -19,6 +19,7 @@ $md_wrap_img: 1023px;
 		flex: 0 0 535px;
 		@media (max-width: $md_wrap_img) {
 			flex: 1 0 auto;
+			max-width: 535px;
 		}
 	}
 

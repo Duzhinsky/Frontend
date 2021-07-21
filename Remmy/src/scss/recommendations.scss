@@ -37,8 +37,7 @@ $md_wrap_img: 1023px;
 		img {
 			max-width: 100%;
 			@media (max-width: $md_wrap_img) {
-				// width: 210px;
-				max-width: calc(210px + (530 - 210)*((100vw - 320px) / (1023 - 320)));;
+				max-width: calc(210px + (530 - 210)*((100vw - 320px) / (1023 - 320)));
 			}
 		}
 
