@@ -47,6 +47,7 @@ $md_wrap_img: 1023px;
 			@media (max-width: 600px) {
 				width: 95%;
 				font-size: calc(12px + (17 - 12)*((100vw - 320px) / (600 - 320)));
+				padding-right: 112px;
 			}
 		}
 
@@ -71,7 +72,9 @@ $md_wrap_img: 1023px;
 			}
 
 			&:hover {
-				background-color: #243399;
+				background-color: #fff;
+				border: 2px solid #3d55f9;
+				color: #3d55f9;
 			}
 		}
 	}
@@ -91,5 +94,9 @@ $md_wrap_img: 1023px;
 				max-width: 210px;
 			}
 		}
+	}
+
+	&__info {
+		max-width: 450px;
 	}
 }

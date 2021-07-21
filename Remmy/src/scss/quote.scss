@@ -1,0 +1,44 @@
+
+
+.quote {
+	margin-top: 115px;
+	margin-bottom: 80px;
+	&__content {
+		max-width: 770px;
+		margin: 0 auto;
+		&__text {
+			margin: 0 0 88px 0;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 27px;
+			line-height: 207%;
+			text-align: center;
+			color: #F0BCA3;
+
+			@media (max-width: 1023px) {
+				font-size: calc(20px + (27 - 20)*((100vw - 320px) / (1023 - 320)));
+			}
+		}
+	}
+	&__author {
+		// width: 100%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&__img {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			overflow: hidden;
+			border-radius: 50%;
+			margin-right: 22px;
+			img {
+				max-width: 100%;
+			}
+		}
+		&__name {
+			color: rgba(7, 19, 48, 0.6) !important;
+		}
+	}
+}

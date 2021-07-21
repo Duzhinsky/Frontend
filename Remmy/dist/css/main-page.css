@@ -79,7 +79,9 @@
 }
 
 .main-page__content button[type=submit]:hover {
-  background-color: #243399;
+  background-color: #fff;
+  border: 2px solid #3d55f9;
+  color: #3d55f9;
 }
 
 .main-page__img {
@@ -99,6 +101,10 @@
 .main-page__img img {
   max-width: 100%;
   image-rendering: crisp-edges;
+}
+
+.main-page__info {
+  max-width: 450px;
 }
 
 @media (max-width: 1023px) {
@@ -131,6 +137,7 @@
   .main-page__content input[type=email] {
     width: 95%;
     font-size: calc(12px + (17 - 12)*((100vw - 320px) / (600 - 320)));
+    padding-right: 112px;
   }
 
   .main-page__content button[type=submit] {

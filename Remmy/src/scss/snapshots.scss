@@ -1,0 +1,11 @@
+
+
+.snapshots {
+	margin-top: 70px;
+	margin-bottom: 110px;
+	& > .about__snapshot {
+		&:not(:last-child) {
+			margin-bottom: 100px;	
+		}
+	}
+}

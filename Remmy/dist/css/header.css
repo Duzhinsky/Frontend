@@ -172,7 +172,9 @@
 }
 
 .header__button:hover {
-  background-color: #243399;
+  background-color: #fff;
+  border: 2px solid #3d55f9;
+  color: #3d55f9;
 }
 
 @media (max-width: 768px) {

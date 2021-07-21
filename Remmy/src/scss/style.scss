@@ -6,6 +6,10 @@
 @import 'social-biohacking.scss';
 @import 'discover-page.scss';
 @import 'discover-features.scss';
+@import 'quote.scss';
+@import 'about_snapshot.scss';
+@import 'snapshots.scss';
+@import 'about.scss';
 
 * {
 	font-family: 'Roboto', sans-serif;
@@ -24,6 +28,13 @@ a {
 	max-width: 1100px;
 	padding: 0px 50px;
 	margin: 0px auto;
+}
+
+.microtitle-text {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #3D55F9;
 }
 
 .plain-text {

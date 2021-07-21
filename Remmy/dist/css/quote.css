@@ -1,0 +1,55 @@
+.quote {
+  margin-top: 115px;
+  margin-bottom: 80px;
+}
+
+.quote__content {
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.quote__content__text {
+  margin: 0 0 88px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 207%;
+  text-align: center;
+  color: #F0BCA3;
+}
+
+.quote__author {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quote__author__img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 22px;
+}
+
+.quote__author__img img {
+  max-width: 100%;
+}
+
+.quote__author__name {
+  color: rgba(7, 19, 48, 0.6) !important;
+}
+
+@media (max-width: 1023px) {
+  .quote__content__text {
+    font-size: calc(20px + (27 - 20)*((100vw - 320px) / (1023 - 320)));
+  }
+}

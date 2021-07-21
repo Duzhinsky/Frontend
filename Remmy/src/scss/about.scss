@@ -1,0 +1,29 @@
+
+
+.about {
+	margin-top: 87px;
+	margin-bottom: 51px;
+	&__content {
+		max-width: 640px;
+		text-align: center;
+		margin: 0 auto;
+	}
+	&__microtitle {
+		margin: 0px auto 20px;
+	}
+	&__title {
+		max-width: 470px;
+		margin: 0px auto 26px;
+	}
+	&__text {
+		max-width: 490px;
+		margin: 0px auto;
+
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 267%;
+		text-align: center;
+		color: #071330;
+	}
+}
