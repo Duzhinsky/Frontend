@@ -55,6 +55,10 @@
   margin: 0;
 }
 
+.header__menu__item:hover {
+  text-decoration: underline;
+}
+
 .header__menu__link {
   color: #071330;
   font-size: 15px;
@@ -165,6 +169,10 @@
   padding: 10px 20px;
   background-color: #3d55f9;
   border-radius: 12px;
+}
+
+.header__button:hover {
+  background-color: #243399;
 }
 
 @media (max-width: 768px) {

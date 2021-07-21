@@ -43,6 +43,9 @@
 			p {
 				margin: 0;
 			}
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 		&__link {
 			color: #071330;
@@ -148,5 +151,9 @@
 		padding: 10px 20px;
 		background-color: #3d55f9;
 		border-radius: 12px;
+
+		&:hover {
+			background-color: #243399;
+		}
 	}
 }

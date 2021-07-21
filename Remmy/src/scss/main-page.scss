@@ -52,7 +52,7 @@ $md_wrap_img: 1023px;
 
 		button[type="submit"] {
 			height: 56px;
-			background: #3D55F9;
+			background-color: #3D55F9;
 			border-radius: 12px;
 
 			font-weight: bold;
@@ -68,6 +68,10 @@ $md_wrap_img: 1023px;
 				padding: 5px 5px;
 				font-size: 12px;
 				margin-left: -100px;
+			}
+
+			&:hover {
+				background-color: #243399;
 			}
 		}
 	}

@@ -4,6 +4,8 @@
 @import 'footer.scss';
 @import 'main-page.scss';
 @import 'social-biohacking.scss';
+@import 'discover-page.scss';
+@import 'discover-features.scss';
 
 * {
 	font-family: 'Roboto', sans-serif;
@@ -42,6 +44,9 @@ a {
 	font-size: 40px;
 	line-height: calc(47 / 40 * 100%);
 	color: #071330;
+	@media (max-width: 768px) {
+		font-size: calc(28px + (40 - 28)*((100vw - 320px) / (768 - 320)));
+	}
 }
 
 .main-text {

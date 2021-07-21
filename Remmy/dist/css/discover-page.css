@@ -1,0 +1,11 @@
+.discover-page {
+  margin-top: 185px;
+  margin-bottom: 41px;
+}
+
+.discover-page__text {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
