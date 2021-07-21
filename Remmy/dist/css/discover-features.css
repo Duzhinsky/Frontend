@@ -25,6 +25,12 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 340px;
           flex: 0 1 340px;
+  overflow: hidden;
+}
+
+.feature__img img {
+  max-width: 100%;
+  image-rendering: crisp-edges;
 }
 
 .feature__number {
@@ -71,5 +77,15 @@
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
+  }
+
+  .feature__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
+  .feature__img img {
+    max-width: 210px;
   }
 }

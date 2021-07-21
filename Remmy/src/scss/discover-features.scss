@@ -24,6 +24,18 @@ $md_wrap_img: 1023px;
 
 	&__img {
 		flex: 0 1 340px;
+		@media (max-width: $md_wrap_img) {
+			flex: 0 1 auto;
+		}
+		overflow: hidden;
+		img {
+			max-width: 100%;
+			image-rendering: crisp-edges;
+
+			@media (max-width: $md_wrap_img) {
+				max-width: 210px;
+			}
+		}
 	}
 
 	&__number {
