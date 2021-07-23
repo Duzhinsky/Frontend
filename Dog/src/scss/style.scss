@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap');
 
-@import 'header.scss';
-@import 'main-page.scss';
+@import '_icons.scss';
+@import '_header.scss';
+@import '_main-page.scss';
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0px auto;
+	padding: 0 50px;
+	box-sizing: content-box;
+}
 
 body {
 	position: absolute;
@@ -12,7 +25,3 @@ body {
 	flex-direction: column;
 }
 
-
-.wrapper {
-	flex: 1 0 100%;
-}
