@@ -51,6 +51,10 @@ $md_hide_search: 374px;
 			margin-right: 30px;
 		}
 
+		& > span {
+			cursor: pointer;
+		}
+
 		&__search {
 			@media (max-width: $md_hide_search) { display: none; }
 		}
@@ -61,7 +65,7 @@ $md_hide_search: 374px;
 		height: 100%;
 		text-align: right;
 
-		max-height: 3000px;
+		max-height: 0px;
 		.active {
 			max-height: 300px;
 		}
