@@ -1,0 +1,60 @@
+
+
+.trigger-products {
+	margin: 130px 0;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		& >:not(:last-child) {
+			margin-right: 30px;
+		}
+		& > svg {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	&__card {
+		flex: 0 1 360px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 8px;
+		padding: 40px 25px 18px;
+
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		&__title {
+			font-family: 'Poppins', sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 25px;
+			line-height: 148%;
+			text-align: center;
+			color: #170C04;
+		}
+		&__text {
+			flex: 1 1 auto;
+		}
+
+		&__img {
+			position: absolute;
+			top: -27px;
+			left: calc(50% - 32px);
+			width: 63px;
+			height: 54px;
+			background-color: #E9C5A5;
+			clip-path: url(#myClip);
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			& > img {
+				max-width: 100%;
+				mix-blend-mode: darken;
+			}
+		}
+	}
+}

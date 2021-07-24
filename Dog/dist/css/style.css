@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;
 
-500;700&family=Roboto:wght@400;500&display=swap");
+500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 @font-face {
   font-family: "icons";
   src: url("../fonts/icons.eot?5197370");
@@ -343,6 +344,7 @@
 
 .main-page__menu-content {
   display: none;
+  overflow-y: scroll;
   float: right;
   padding-top: 120px;
   padding-right: max(50px, calc(50px + (100vw - 1240px) / 2));
@@ -382,6 +384,87 @@
   text-align: right;
 }
 
+.trigger-products {
+  margin: 130px 0;
+}
+
+.trigger-products__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trigger-products__row > :not(:last-child) {
+  margin-right: 30px;
+}
+
+.trigger-products__row > svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.trigger-products__card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 360px;
+          flex: 0 1 360px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 40px 25px 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.trigger-products__card__title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 148%;
+  text-align: center;
+  color: #170C04;
+}
+
+.trigger-products__card__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.trigger-products__card__img {
+  position: absolute;
+  top: -27px;
+  left: calc(50% - 32px);
+  width: 63px;
+  height: 54px;
+  background-color: #E9C5A5;
+  -webkit-clip-path: url(#myClip);
+          clip-path: url(#myClip);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trigger-products__card__img > img {
+  max-width: 100%;
+  mix-blend-mode: darken;
+}
+
 a {
   text-decoration: none;
 }
@@ -407,6 +490,25 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.plain-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #170C04;
+  opacity: 0.6;
+}
+
+.link-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #E27B3A;
 }
 
 @media (max-width: 1240px) {

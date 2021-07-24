@@ -119,6 +119,7 @@ $md_hide_nav: 1023px;
 
 	&__menu-content {
 		display: none;
+		overflow-y: scroll;
 		&.menu-active { display: block; }
 		float: right;
 
