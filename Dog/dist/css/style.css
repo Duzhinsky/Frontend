@@ -321,13 +321,18 @@
   -webkit-transition: 0.08s ease;
   -o-transition: 0.08s ease;
   transition: 0.08s ease;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 120px;
+  padding-right: max(50px, calc(50px + (100vw - 1240px) / 2));
+  overflow-y: scroll;
 }
 
 .main-page__bg-figure__wrapper {
   position: absolute;
   right: 0;
   top: 0;
-  height: 100vh;
+  height: 100%;
   width: auto;
   background-color: #fff;
   z-index: 0;
@@ -344,10 +349,7 @@
 
 .main-page__menu-content {
   display: none;
-  overflow-y: scroll;
   float: right;
-  padding-top: 120px;
-  padding-right: max(50px, calc(50px + (100vw - 1240px) / 2));
 }
 
 .main-page__menu-content.menu-active {
@@ -385,7 +387,7 @@
 }
 
 .trigger-products {
-  margin: 130px 0;
+  margin: 160px 0 130px 0;
 }
 
 .trigger-products__row {
@@ -398,6 +400,7 @@
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  position: relative;
 }
 
 .trigger-products__row > :not(:last-child) {
@@ -411,13 +414,10 @@
 }
 
 .trigger-products__card {
-  margin-bottom: 50px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 360px;
-          flex: 0 1 360px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 40px 25px 18px;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,7 +428,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .trigger-products__card__title {
@@ -483,6 +482,29 @@
 .trigger-products__card__img > img {
   max-width: 100%;
   mix-blend-mode: darken;
+}
+
+.trigger-products__card:hover::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  right: 5px;
+  height: 100%;
+  background-color: #E27B3A;
+  z-index: -1;
+  opacity: 0.15;
+  -webkit-filter: blur(25px);
+          filter: blur(25px);
+}
+
+.trigger-products__card__wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+.trigger-products__card:hover {
+  border: none;
 }
 
 a {
@@ -551,7 +573,7 @@ body {
     display: none;
   }
 
-  .main-page__menu-content {
+  .main-page__bg-figure {
     padding-top: 85px;
   }
 }

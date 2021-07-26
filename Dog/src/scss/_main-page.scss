@@ -82,7 +82,7 @@ $md_hide_nav: 1023px;
 			position: absolute;
 			right: 0;
 			top: 0;
-			height: 100vh;
+			height: 100%;
 			width: auto;
 			background-color: #fff;
 			z-index: 0;
@@ -97,6 +97,12 @@ $md_hide_nav: 1023px;
 		width: calc(344px + 50px + max(0px,(100vw - #{$container_width})/2));
 		clip-path: polygon(254px 0%, 100% 0%, 100% 100%, 0% 100%);
 		transition: 0.08s ease;
+
+		box-sizing: border-box;
+		padding-top: 120px;
+		@media (max-width: $md_hide_nav) { padding-top: 85px; }
+		padding-right: max(50px , calc(50px + (100vw - #{$container_width}) / 2));
+		overflow-y: scroll;
 
 		@media (max-width: $change_figure) { 
 			width: 100vw;
@@ -119,15 +125,8 @@ $md_hide_nav: 1023px;
 
 	&__menu-content {
 		display: none;
-		overflow-y: scroll;
 		&.menu-active { display: block; }
 		float: right;
-
-		padding-top: 120px;
-		@media (max-width: $md_hide_nav) { padding-top: 85px; }
-
-		padding-right: max(50px , calc(50px + (100vw - #{$container_width}) / 2));
-
 		&__list {
 			margin: 0;
 			padding: 0;
