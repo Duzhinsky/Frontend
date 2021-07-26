@@ -112,6 +112,7 @@
 
 .trigger-products__card__wrapper {
   position: relative;
+  margin-bottom: 50px;
   z-index: 0;
 }
 
