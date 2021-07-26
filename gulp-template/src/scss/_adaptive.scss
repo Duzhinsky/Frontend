@@ -1,0 +1,8 @@
+
+
+@mixin linearValue($parameter, $start, $end, $value_start, $value_end) {
+	@media (max-width: $end) and (min-width: $start) {
+		$diff: $value_end - $value_start;
+		#{$parameter}: calc(#{$value_start} + #{$diff} * (100vw - 320px) / (#{$end} - #{$start}) )
+	}
+}
