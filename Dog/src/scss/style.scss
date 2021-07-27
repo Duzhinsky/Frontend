@@ -1,10 +1,12 @@
+@use 'vars';
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-@import '_icons.scss';
-@import '_buttons.scss';
-@import '_header.scss';
-@import '_main-page.scss';
+@import 'icons.scss';
+@import 'buttons.scss';
+@import 'header.scss';
+@import 'main-page.scss';
 @import 'trigger-products.scss';
 
 a {
@@ -13,10 +15,11 @@ a {
 }
 
 .container {
-	max-width: 1140px;
-	margin: 0px auto;
-	padding: 0 50px;
 	box-sizing: content-box;
+	max-width: vars.$container_width;
+	margin: 0px auto;
+	padding: 0 vars.$container_padding;
+	@media (max-width: vars.$container_padding_change) { padding: 0 vars.$container_padding_mobile; }
 }
 
 body {
@@ -31,20 +34,16 @@ body {
 
 .plain-text {
 	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 16px;
 	line-height: 150%;
-	color: #170C04;
+	color: vars.$color_orange;
 	opacity: 0.6;
 }
 
 
 .link-text {
 	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 16px;
 	line-height: 150%;
-	color: #E27B3A;
+	color: vars.$color_orange;
 }
