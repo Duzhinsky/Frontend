@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-@import 'icons.scss';
-@import 'buttons.scss';
-@import 'header.scss';
-@import 'main-page.scss';
-@import 'trigger-products.scss';
+@import 'icons';
+@import 'buttons';
+@import 'header';
+@import 'main-page';
+@import 'trigger-products';
+@import 'products';
 
 a {
 	text-decoration: none;
@@ -34,15 +35,19 @@ body {
 
 .plain-text {
 	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
 	font-size: 16px;
 	line-height: 150%;
-	color: vars.$color_orange;
+	color: vars.$color_black;
 	opacity: 0.6;
 }
 
 
 .link-text {
 	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
 	font-size: 16px;
 	line-height: 150%;
 	color: vars.$color_orange;

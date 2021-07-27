@@ -33,7 +33,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-		flex: 0 1 630px;
+		flex: 0 1 650px;
 
 		margin-left: 30px;
 		@media (max-width: vars.$md_main-page_change_orientation) {
@@ -60,6 +60,7 @@
 
 		&__text {
 			margin: 0 0 0.5em 0;
+			font-family: Poppins;
 			font-weight: bold;
 			font-size: 100px;
 			@include adaptive.linearValue(font-size, 320px, 1240px, 30px, 100px);
