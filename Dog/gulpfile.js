@@ -21,6 +21,7 @@ let path={
 		css: source_folder+"/scss/**/*.scss",
 		js: source_folder+"/js/**/*.js",
 		img: source_folder+"/img/**/*.{jpg,png,svg,gif,ico,webp}",
+		fonts: source_folder+"/fonts/*.{ttf,woff,woff2,eot}",
 	},
 	clean: "./" + project_folder + "/",
 }
@@ -101,6 +102,7 @@ function watchFiles(params) {
 	gulp.watch([path.watch.html],html);
 	gulp.watch([path.watch.css],css);
 	gulp.watch([path.watch.js],js);
+	gulp.watch([path.watch.fonts],fonts);
 	gulp.watch([path.watch.img],images);
 }
 
