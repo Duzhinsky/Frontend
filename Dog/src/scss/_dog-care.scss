@@ -1,0 +1,61 @@
+@use 'vars';
+@use 'adaptive';
+
+.dog-care {
+	margin-top: 74px;
+	margin-bottom: 30px;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: vars.$md_dog-care_wrap) { flex-wrap: wrap; }
+	}
+
+	&__img {
+		flex: 1 1 auto;
+		margin-left: -74px;
+		@media (max-width: vars.$container_width + 2 * vars.$container_padding + 74px + 10px) {
+			margin-left: 0px;
+		}
+		overflow: hidden;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__content {
+		margin-left: 50px;
+		@media (max-width: vars.$md_dog-care_wrap) { margin: 0; }
+		flex: 0 1 480px;
+		&__microtitle {
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 118.75%;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+			color: #E27B3A;
+			opacity: 0.8;
+
+			margin: 0 0 2px 0;
+		}
+
+		&__title {
+			margin: 0 0 13px 0;
+		}
+
+		&__text {
+			margin: 0 0 38px 0;
+		}
+
+		&__buttons {
+			& > * {
+				&:not(:last-child) { margin-right: 30px; }
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

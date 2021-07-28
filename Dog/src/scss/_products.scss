@@ -42,13 +42,7 @@
 
 		&__title {
 			margin: 0 0 13px 0;
-			font-family: Poppins;
-			font-style: normal;
-			font-weight: 500;
-			font-size: 32.25px;
-			line-height: 148.8%;
 			text-align: center;
-			color: vars.$color_black;
 		}
 
 		&__text {
@@ -83,7 +77,7 @@
 		img {
 			max-width: 100%;
 			@media (max-width: vars.$md_product_wrap) { 
-				@include adaptive.linearValue(max-width, 320px, vars.$md_product_wrap, 210px, 100%);
+				@include adaptive.linearValue(max-width, 320px, vars.$md_product_wrap, 210px, 400px);
 			 }
 			object-fit: cover;
 			mix-blend-mode: darken;

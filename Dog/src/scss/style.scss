@@ -9,6 +9,7 @@
 @import 'main-page';
 @import 'trigger-products';
 @import 'products';
+@import 'dog-care';
 
 a {
 	text-decoration: none;
@@ -51,4 +52,13 @@ body {
 	font-size: 16px;
 	line-height: 150%;
 	color: vars.$color_orange;
+}
+
+.title-text {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32.25px;
+	line-height: 148.8%;
+	color: vars.$color_black;
 }
