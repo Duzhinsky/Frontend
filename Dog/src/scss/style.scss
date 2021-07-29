@@ -52,6 +52,9 @@ body {
 	font-size: 16px;
 	line-height: 150%;
 	color: vars.$color_orange;
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .title-text {

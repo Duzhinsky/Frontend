@@ -726,6 +726,10 @@ body {
   color: #E27B3A;
 }
 
+.link-text:hover {
+  text-decoration: underline;
+}
+
 .title-text {
   font-family: Poppins;
   font-style: normal;
