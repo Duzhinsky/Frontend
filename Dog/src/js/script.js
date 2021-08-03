@@ -13,3 +13,9 @@ $(".product__img").get().forEach(function(entry, index, array) {
 	$(entry).css({'height':cw*0.75675675675+'px'});
 	console.log(cw);
 });
+
+
+new Swiper('.feedback__slider', {
+	direction: 'vertical',
+	// autoHeight: true,
+})

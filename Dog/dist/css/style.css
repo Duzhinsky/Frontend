@@ -903,27 +903,23 @@
   text-align: center;
 }
 
-.feedback__slider__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  position: relative;
-}
-
-.feedback__slide {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.feedback__slider {
   max-width: 555px;
-  padding: 30px;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
+}
+
+.feedback__slider__wrapper {
+  position: relative;
+}
+
+.feedback__slide {
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px;
   position: relative;
 }
 
@@ -978,6 +974,80 @@
 .feedback__slide__quote-close {
   bottom: 30px;
   right: 30px;
+}
+
+.footer {
+  padding: 70px 0 105px;
+  background-color: #140A03;
+  -webkit-clip-path: polygon(0% 60px, calc((100vw - 743px)/2) 60px, calc(100vw / 2) 0px, calc((100vw - 743px)/2 + 743px) 60px, 100% 60px, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 60px, calc((100vw - 743px)/2) 60px, calc(100vw / 2) 0px, calc((100vw - 743px)/2 + 743px) 60px, 100% 60px, 100% 100%, 0% 100%);
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.footer__link .plain-text {
+  color: #fff !important;
+  margin: 0;
+}
+
+.footer__link:not(:last-child) .plain-text {
+  padding-bottom: 33px;
+}
+
+.footer__right,
+.footer__left {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer__right {
+  right: 50px;
+  text-align: right;
+}
+
+.footer__left {
+  left: 50px;
+}
+
+.footer__center__logo {
+  margin: 0px 0px 60px;
+}
+
+.footer__center__logo__img {
+  margin: 0px auto 13px;
+  width: 29px;
+  overflow: hidden;
+}
+
+.footer__center__logo__img img {
+  width: 100%;
+}
+
+.footer__center__logo__title {
+  margin: 0px auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer__center__icons {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
 }
 
 a {
@@ -1220,6 +1290,10 @@ body {
 
   .logo__text {
     font-size: 25px;
+  }
+
+  .footer__center__logo__img {
+    width: 31px;
   }
 }
 

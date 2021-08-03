@@ -14,15 +14,17 @@
 
 	&__slider {
 		&__wrapper {
-			display: flex;
-			align-items: stretch;
-			align-content: stretch;
 			position: relative;
 		}
+
+		max-width: 555px;
+		background: #FFFFFF;
+		box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
+		border-radius: 10px;
 	}
 
 	&__slide {
-
+		height: auto;
 		&__bg {
 			background: #FFFFFF;
 			box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
@@ -36,12 +38,7 @@
 			height: 100%;
 		}
 		box-sizing: border-box;
-		max-width: 555px;
 		padding: 30px;
-
-		background: #FFFFFF;
-		box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
-		border-radius: 10px;
 
 		position: relative;
 
