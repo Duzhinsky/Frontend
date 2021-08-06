@@ -78,7 +78,7 @@ function js(params) {
 		.pipe(dest(path.build.js))
 		.pipe(uglify())
 		.pipe(rename({
-			extname: ".min.css"
+			extname: ".min.js"
 		}))
 		.pipe(dest(path.build.js))
 		.pipe(browsersync.stream());
@@ -113,6 +113,7 @@ function clean(params) {
 let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
 let watch = gulp.parallel(build,watchFiles,browserSync);
 
+exports.fonts = fonts;
 exports.images = images;
 exports.js = js;
 exports.css = css;
