@@ -1,0 +1,1 @@
+let phone_inputs=document.querySelectorAll(".phone-input");phone_inputs.forEach(e=>{Inputmask({mask:"+7 (999) 999-99-99"}).mask(e)});
