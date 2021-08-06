@@ -1,5 +1,45 @@
-
+@use 'vars' as v;
 
 .button {
+	padding: 20px 62px;
+	text-align: center;
 
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 100%;
+	color: #fff;
+	text-decoration: none;
+
+	background: v.$color_red;
+	border: none;
+	border-radius: 4px;
+
+	cursor: pointer;
+
+	&_add-shadow {
+		box-shadow: 0px 50px 74px rgba(0, 0, 0, 0.2);
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:focus {
+		outline-offset: 5px;
+	}
+
+	&:active {
+		background: v.$color_darkred;
+	}
+
+	&:before {
+		// To align text at center 
+		// https://ishadeed.com/article/button-label-alignment/
+		content: "";
+		display: inline-block;
+		height: 2rem;
+		vertical-align: middle;
+	}
 }
