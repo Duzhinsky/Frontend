@@ -1,15 +1,43 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Regular.woff") format("woff");
+  src: local("Gilroy"), url("../fonts/Gilroy-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../fonts/Gilroy-Bold.woff") format("woff");
+  src: local("Gilroy"), url("../fonts/Gilroy-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: local("Acumin Pro"), url("../fonts/Acumin-RPro.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Acumin Pro";
+  src: local("Acumin Pro Bold"), url("../fonts/Acumin-BdPro.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Coworking";
+  src: local("Coworking"), url("../fonts/Coworking.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
 html {
