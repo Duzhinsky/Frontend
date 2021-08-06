@@ -1,0 +1,131 @@
+.write-message__wrapper {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 50px 0 85px;
+  padding: 85px 64px 89px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.write-message__wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2E96FF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transform: skewY(-1.5deg);
+      -ms-transform: skewY(-1.5deg);
+          transform: skewY(-1.5deg);
+}
+
+.write-message__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 420px;
+          flex: 1 1 420px;
+}
+
+.write-message__title {
+  margin: 0 0 14px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31.25px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.write-message__text {
+  margin: 0;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.write-message__form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 488px;
+          flex: 1 1 488px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30px;
+}
+
+.submit-form__input {
+  width: 100%;
+  height: 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 135px 15px 20px;
+  background: #fff;
+  opacity: 1;
+  border: none;
+  border-radius: 10px;
+  line-height: 254%;
+}
+
+.submit-form__button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 115px;
+          flex: 0 0 115px;
+  margin-left: -115px;
+  height: 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #E27B3A;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 227%;
+  color: #fff;
+}
+
+@media (max-width: 880px) {
+  .write-message__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .write-message__form {
+    margin: 30px 0 0 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .write-message__form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .submit-form__input {
+    padding-right: 20px;
+  }
+
+  .submit-form__button {
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+  }
+}
