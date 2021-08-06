@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy Bold";
   src: local("Gilroy"), url("../fonts/Gilroy-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -20,7 +20,7 @@
 }
 
 @font-face {
-  font-family: "Acumin Pro";
+  font-family: "Acumin Pro Bold";
   src: local("Acumin Pro Bold"), url("../fonts/Acumin-BdPro.woff") format("woff");
   font-style: normal;
   font-weight: normal;
@@ -82,4 +82,28 @@ html {
   display: inline-block;
   height: 2rem;
   vertical-align: middle;
+}
+
+.phone-input {
+  margin: 50px;
+  padding: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  text-align: center;
+  font-family: Acumin Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.phone-input:focus {
+  outline-offset: 5px;
+}
+
+.phone-input_add-shadow {
+  -webkit-box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 40px 50px rgba(0, 0, 0, 0.1);
 }

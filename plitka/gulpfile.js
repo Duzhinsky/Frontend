@@ -78,7 +78,7 @@ function js(params) {
 		.pipe(dest(path.build.js))
 		.pipe(uglify())
 		.pipe(rename({
-			extname: ".min.css"
+			extname: ".min.js"
 		}))
 		.pipe(dest(path.build.js))
 		.pipe(browsersync.stream());
