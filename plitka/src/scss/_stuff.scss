@@ -1,5 +1,36 @@
 @use 'fonts';
+@use 'vars' as v;
 
 html {
 	font-size: 8px;
+}
+
+body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+._container {
+	max-width: v.$container_width;
+	padding: 0 v.$container_padding;
+	margin: 0 auto;
+}
+
+._plain-bold {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2rem;
+	line-height: 100%;
+	color: #000;
 }
