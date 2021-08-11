@@ -1,8 +1,12 @@
 @use 'fonts';
 @use 'vars' as v;
+@use 'adaptive';
 
 html {
 	font-size: 8px;
+	@media (min-width: 320px) and (max-width: 375px) {
+		font-size: 6px;
+	}
 }
 
 body {
