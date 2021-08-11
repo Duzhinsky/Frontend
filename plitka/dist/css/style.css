@@ -342,6 +342,51 @@ main {
           transform: rotate(90deg);
 }
 
+.button {
+  padding: 20px 62px;
+  text-align: center;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 100%;
+  color: #fff;
+  text-decoration: none;
+  background: #FF3100;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button_add-shadow {
+  -webkit-box-shadow: 0px 50px 74px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 50px 74px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline-offset: 5px;
+}
+
+.button:active {
+  background: #B71000;
+}
+
+.button:before {
+  content: "";
+  display: inline-block;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+}
+
 @media (max-width: 1190px) {
   .header__phone {
     display: none;

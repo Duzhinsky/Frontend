@@ -1,2 +1,10 @@
 @use 'stuff';
 @use 'blocks/header';
+
+@use 'blocks/button.scss';
+
+
+.header {
+	position: fixed;
+	width: 100%;
+}
