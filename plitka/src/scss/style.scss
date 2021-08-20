@@ -1,10 +1,27 @@
 @use 'stuff';
 @use 'blocks/header';
+@use 'blocks/main-screen.scss';
 
-@use 'blocks/button.scss';
+html {
+	font-size: 8px;
+	@media (min-width: 320px) and (max-width: 375px) {
+		font-size: 6px;
+	}
+}
 
-
-.header {
-	position: fixed;
+body {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
 }
