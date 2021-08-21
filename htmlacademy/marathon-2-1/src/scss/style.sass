@@ -1,0 +1,29 @@
+@use 'vars' as v
+@import 'iconsfont'
+@import 'fonts'
+
+body
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	min-height: 100%
+	display: flex
+	flex-direction: column
+
+main 
+	flex: 1 1 auto
+
+.display-none 
+	display: none
+
+
+.container 
+	max-width: v.$container_width
+	margin: 0px auto
+	padding: 0px v.$container_padding_small-phone // IE support
+	padding: 0px var(--container_padding)
+
+
+@import 'blocks/header'
+@import 'blocks/footer'

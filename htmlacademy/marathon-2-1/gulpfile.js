@@ -11,14 +11,14 @@ let path={
 	},
 	src:{
 		html: [source_folder+"/*.html", "!"+source_folder+"/_*.html"],
-		css: [source_folder+"/scss/*.{scss,css}", "!"+source_folder+"/scss/_*.{scss,css}"],
+		css: [source_folder+"/scss/*.{scss,css,sass}", "!"+source_folder+"/scss/_*.{scss,css,sass}"],
 		js: source_folder+"/js/*.js",
 		img: source_folder+"/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}",
 		fonts: source_folder+"/fonts/*.{ttf,woff,woff2,eot}",
 	},
 	watch:{
 		html: source_folder+"/**/*.html",
-		css: source_folder+"/scss/**/*.scss",
+		css: source_folder+"/scss/**/*.{css,scss,sass}",
 		js: source_folder+"/js/**/*.js",
 		img: source_folder+"/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}",
 		fonts: source_folder+"/fonts/*.{ttf,woff,woff2,eot}",
@@ -57,7 +57,7 @@ function html(params) {
 
 function css(params) {
 	return src(path.src.css)
-		.pipe(scss({ outputStyle: 'expanded' }).on('error', scss.logError))
+		.pipe(scss({outputStyle: 'compressed'}).on('error', scss.logError))
 		.pipe(group_media())
 		.pipe(autoprefixer({
 			overrideBrowserslist: ["last 5 versions"],
