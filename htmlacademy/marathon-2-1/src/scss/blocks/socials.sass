@@ -4,14 +4,12 @@
 	--social-size: 20px
 	@media screen and (max-width: 768px)
 		--social-size: 25px
-	@media screen and (max-width: 425px) 
-		--social-size: 30px
 
 	display: grid
 	grid-template-columns: 1fr 1fr 1fr
 	grid-template-rows: 20px // IE support
 	grid-template-rows: var(--social-size)
-	column-gap: 20px
+	column-gap: 16px
 
 	font-size: 20px // IE support
 	font-size: var(--social-size)
