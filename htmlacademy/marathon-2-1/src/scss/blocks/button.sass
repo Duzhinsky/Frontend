@@ -1,0 +1,43 @@
+@use 'vars' as v
+
+
+.button
+	display: inline-block
+	padding: 24px 70px
+	&_extended
+		padding: 24px 106px
+
+	text-decoration: none
+	text-align: center
+	@extend .plain-text
+	color: #fff
+
+	background-color: v.$color_main
+	border: none
+	border-radius: 40px
+
+	cursor: pointer
+
+	&:hover 
+		text-decoration: underline
+	
+	&:focus 
+		outline-offset: 5px
+
+	&:active 
+		background: v.$color_dark-main
+	
+	&:before 
+		// To align text at center 
+		// https://ishadeed.com/article/button-label-alignment/
+		content: ""
+		display: inline-block
+		height: 2rem
+		vertical-align: middle
+
+	@media screen and (max-width:  v.$button_md)
+		padding: 14px 57px
+		border-radius: 30px
+		&_extended 
+			padding: 14px 94px
+		

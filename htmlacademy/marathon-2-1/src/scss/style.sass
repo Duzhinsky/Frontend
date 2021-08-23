@@ -23,7 +23,34 @@ main
 	padding: 0px v.$container_padding_small-phone // IE support
 	padding: 0px var(--container_padding)
 
+.plain-text
+	font-family: Montserrat
+	font-style: normal
+	font-weight: normal
+	font-size: 16px
+	line-height: 125%
+	&_increased
+		font-size: 24px
+
+.accented-text
+	font-family: Montserrat
+	font-style: normal
+	font-weight: 500
+	font-size: 16px
+	line-height: 125%
+
+.title-text
+	font-family: Playfair Display
+	font-style: normal
+	font-weight: normal
+	font-size: 44px
+	line-height: 134%
+
+
+
+@import 'blocks/button'
 @import 'blocks/main-nav'
 @import 'blocks/socials'
 @import 'blocks/header'
 @import 'blocks/footer'
+@import 'blocks/primary'
