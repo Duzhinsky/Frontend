@@ -2,27 +2,73 @@
 
 .primary
 	margin-top: 81px
+	@media screen and (max-width:  v.$primary_md-wrap-gallery)
+		margin-top: 42px
+	@media screen and (max-width:  v.$primary_md-disable-gallery)
+		margin-top: 29px
 
 	&__container
 		display: flex
+		@media screen and (max-width:  v.$primary_md-wrap-gallery)
+			flex-wrap: wrap
 
 	&__content
+		position: relative
+		z-index: 0
 		flex: 1 0 385px
 		margin-right: 20px
+		@media screen and (max-width:  v.$primary_md-wrap-gallery)
+			margin: 0 0 54px
+			text-align: center
+		
+		@media screen and (max-width:  v.$primary_md-disable-gallery)
+			flex: 1 1 260px
+			background-image: url(../img/flowers2.jpeg)
+			background-size: cover
+			background-position: center
+			border-radius: 10px
+			padding: 20px 0
+
+		&::before	
+			@media screen and (max-width:  v.$primary_md-disable-gallery)
+				content: ''
+				position: absolute
+				z-index: -1
+				top: 0
+				left: 0
+				bottom: 0
+				right: 0
+				border-radius: 10px
+				background-color: v.$color_dark-overlay
 
 	&__gallery
-		flex: 0 1 792px
+		flex: 1 1 792px
 		display: grid
 		grid-template-columns: 1fr 1fr
 		column-gap: 20px
+		@media screen and (max-width:  v.$primary_md-disable-gallery)
+			display: none
 
 	&__title 
-		margin: 0 0 24px
+		margin: 0 auto 24px
 		color: v.$color_dark-main
+		max-width: 500px
+		@media screen and (max-width:  v.$primary_md-disable-gallery)
+			color: #fff
+			font-size: 33px
+			max-width: 260px
 		
 	&__text
-		margin: 0 0 64px
+		margin: 0 auto 64px
 		color: v.$color_dark-main
+		max-width: 430px
+		@media screen and (max-width:  v.$primary_md-wrap-gallery)
+			margin: 0 auto 30px
+		@media screen and (max-width:  v.$primary_md-disable-gallery)
+			color: #fff
+			font-size: 18px
+			max-width: 260px
+			margin: 0 auto 36px
 
 	&__image
 		&-wrap
@@ -33,9 +79,13 @@
 			&:first-child
 				padding-top: 105%
 				margin-top: 58px
+				@media screen and (max-width:  v.$primary_md-wrap-gallery)
+					margin-top: 30px
 			&:last-child
 				padding-top: 109%
 				margin-bottom: 42px
+				@media screen and (max-width:  v.$primary_md-wrap-gallery)
+					margin-bottom: 17px
 		position: absolute
 		top: 0
 		left: 0
