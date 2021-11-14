@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>title</title>
+
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="title">Orientix</h1>
+		<form class="file_select__form" action="handler.php">
+			<h2 class="file_select__title">Проверка ключей</h2>
+			<input id="file_select-file" name="file" type="file" style="display: none;">
+			<button class="file_select__button button" id="file_select-button">Загрузить</button>
+		</form>
+		<section class="uploaded-files">
+			<article class="uploaded-files__result" id="input0">
+				<figure class="uploaded-files__result__content">
+					<img src="img/Step-3.png" alt="" class="uploaded-files__result__image">
+					<button type="button" class="uploaded-files__result__close">
+						<img src="img/Close_button.png" alt="">
+					</button>
+				</figure>
+				<p class="uploaded-files__result__filename">Step-3.jpeg</p>
+				<a class="button" href="#">Скачать</a>
+			</article>
+		</section>
+		<section class="mistakes">
+			<article class="mistakes__series" id="input0">
+				<div class="mistake">
+					<p class="mistake__keyname">Ключ Старый lǎo</p>
+					<img src="img/mis1.png" alt="" class="mistake__content">
+				</div>
+				<div class="mistake">
+					<p class="mistake__keyname">Ключ Цвет sè</p>
+					<img src="img/mis2.png" alt="" class="mistake__content">
+				</div>
+			</article>
+		</section>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#file_select-button').click(function () {
+				$("#file_select-file").click();
+			});
+		});
+		$('#file_select-file').change(function () {
+			$('.file_select-form').submit();
+		});
+	</script>
+</body>
+
+</html>

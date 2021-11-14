@@ -1,0 +1,156 @@
+.container {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-width: 1020px;
+  margin: 0px auto;
+  padding: 0px 40px;
+}
+
+.button {
+  text-align: center;
+  padding: 7px 28px;
+  border-radius: 13px;
+  border: 1px solid black;
+  background-color: #ffeded;
+  font-family: "SF Pro Display Bold";
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.title {
+  font-family: "San-Francisco-Pro-Display-Bold-Italic";
+  font-size: 55px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+  padding: 15px 0 0;
+}
+
+.file_select__form {
+  text-align: center;
+}
+
+.file_select__title {
+  font-family: "SF Pro Display Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 32px;
+}
+
+.uploaded-files {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.uploaded-files__result {
+  text-align: center;
+}
+
+.uploaded-files__result__content {
+  position: relative;
+}
+
+.uploaded-files__result__image {
+  max-width: 100%;
+}
+
+.uploaded-files__result__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: transparent;
+  border: none;
+}
+
+.mistakes {
+  margin: 60px 0 30px;
+}
+
+.mistake {
+  margin-top: 15px;
+}
+
+.mistake__keyname {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  letter-spacing: 0px;
+  color: #1a1a1a;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "SF Pro Display Heavy Italic";
+}
+
+.mistake__content {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: "SF Pro Display Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display Regular"), url("SFPRODISPLAYREGULAR.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Ultralight Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display Ultralight Italic"), url("SFPRODISPLAYULTRALIGHTITALIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Thin Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display Thin Italic"), url("SFPRODISPLAYTHINITALIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display Light Italic"), url("SFPRODISPLAYLIGHTITALIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display Medium"), url("SFPRODISPLAYMEDIUM.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Semibold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display Semibold Italic"), url("SFPRODISPLAYSEMIBOLDITALIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display Bold"), url("SFPRODISPLAYBOLD.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Heavy Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display Heavy Italic"), url("SFPRODISPLAYHEAVYITALIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Black Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display Black Italic"), url("SFPRODISPLAYBLACKITALIC.woff") format("woff");
+}
